@@ -1,0 +1,18 @@
+[2025-03-27T15:37:39.291060+00:00] main.INFO: Source table payment_services_order_status_data_production_submitted_hash does not exist. Skipping data migration... [] []
+[2025-03-27T15:44:43.158268+00:00] main.ERROR: crontab -l 2>/dev/null 2>&1
+no crontab for root [] []
+[2025-03-27T15:44:43.162860+00:00] main.ERROR: crontab -l 2>/dev/null 2>&1
+no crontab for root [] []
+[2025-03-27T15:44:43.167040+00:00] main.INFO: echo "
+#~ MAGENTO START f73db5f5dcf223372d4c9fab56bef0c1730eece898fad5cbee0c313b46b0dd1f
+* * * * * /usr/bin/php8.3 /var/www/html/magento2/bin/magento cron:run 2>&1 | grep -v \"Ran jobs by schedule\" >> /var/www/html/magento2/var/log/magento.cron.log
+#~ MAGENTO END f73db5f5dcf223372d4c9fab56bef0c1730eece898fad5cbee0c313b46b0dd1f
+" 2>&1 | crontab - 2>&1
+ [] []
+[2025-03-27T15:48:01.691835+00:00] main.ERROR: Warning: file_put_contents(/var/www/html/magento2/var/cache//mage-tags/mage---f73_TRANSLATE): Failed to open stream: Permission denied in /var/www/html/magento2/vendor/colinmollenhour/cache-backend-file/File.php on line 710 [] []
+[2025-03-27T15:48:14.526352+00:00] main.ERROR: Warning: file_put_contents(/var/www/html/magento2/var/cache//mage-tags/mage---f73_TRANSLATE): Failed to open stream: Permission denied in /var/www/html/magento2/vendor/colinmollenhour/cache-backend-file/File.php on line 710 [] []
+[2025-03-27T15:48:20.959445+00:00] main.ERROR: Warning: file_put_contents(/var/www/html/magento2/var/cache//mage-tags/mage---f73_TRANSLATE): Failed to open stream: Permission denied in /var/www/html/magento2/vendor/colinmollenhour/cache-backend-file/File.php on line 710 [] []
+[2025-03-27T15:48:20.959692+00:00] main.CRITICAL: Warning: file_put_contents(/var/www/html/magento2/var/cache//mage-tags/mage---f73_TRANSLATE): Failed to open stream: Permission denied in /var/www/html/magento2/vendor/colinmollenhour/cache-backend-file/File.php on line 710 [] []
+[2025-03-27T16:00:03.677083+00:00] main.INFO: Request token 0zc8ki83nfnmebdt2jxgxnmgx26cilt8 was exchanged to obtain access token for consumer 1 [] []
+[2025-03-27T16:00:06.076759+00:00] main.ERROR: Warning: file_put_contents(/var/www/html/magento2/var/cache//mage-tags/mage---f73_WEBSERVICE): Failed to open stream: Permission denied in /var/www/html/magento2/vendor/colinmollenhour/cache-backend-file/File.php on line 710 [] []
+[2025-03-27T16:00:06.449948+00:00] main.WARNING: Subscription for MBI service has been failed. An error occurred during token exchange: {"message":"Handshake request failed."}. Content-Type: application/json; charset=UTF-8 [] []
